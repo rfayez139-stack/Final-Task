@@ -3,8 +3,9 @@
 <head>
     <title>تقرير بحثي</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color:white;">
+    <body style="background-color:white;">
     <h1 align="center">الذكاء الاصطناعي التوليدي كعامل مساعد للمطورين</h1>
 <p align="center">
     <img src="IMG_934a9805-d785-46ce-8843-321647.jpg"/>
@@ -13,6 +14,12 @@
     <p><strong>الرقم الجامعي: 2502054</strong></p>
     <p><strong>إشراف: د/ مها زغلول</strong></p>
     <h2 align="center">*المقدمة*</h2>
+    <div class="actions">
+    <button type="button" onclick="sayWelcome()">رسالة ترحيب</button>
+    <button type="button" onclick="changeBg()">تغيير اللون</button>
+    <p id="msg"></p>
+</div>
+
     <p>
         يرى العالم اليوم التطورات في البرمجه وتطوير البرامج وانشاء تصاميم للمواقع في التقنيات الذكاء الاصطناعي التوليدي لم يعد يقتصر على دور الذكاء في اقامه المهام الروتينيه بل اصبح شريك كل انسان في مختلف المجالات ومراحل الحياه الإنسان حيث اصبح الإنسان لا يستغنى عنه اليوم مثل CSS, JS, HTML وهو يساعد اليوم الطلبه في الدراسه ويساعدهم في تعلم لغات تخصص Chat GPT, Gemini في تصحيح الاخطاء ولكن الاعتماد عليه في كافة الحياه يساعد في الغاء مخ البشر ويجعلهم كاله تتبع الذكاء دون تفكير.
     </p>
@@ -68,5 +75,15 @@ HTML نستخدم في انشاء التنسيقات لصفحه الـ JS لغة
         <li><a href="https://scholar.google.com" target="_blank">
 د/ خالد عبد المنعم - تأثير الدورات التكنولوجيه المتقدمه للتقديم النقدي</a></li>
     </ul>
+    <script>
+function sayWelcome() {
+    document.getElementById("msg").innerText = "أهلاً بك في تقرير الذكاء الاصطناعي التوليدي!";
+    alert("أهلاً بك في تقرير الذكاء الاصطناعي التوليدي!");
+}
+function changeBg() {
+    document.body.classList.toggle("alt-bg");
+}
+</script>
+
 </body>
 </html>
